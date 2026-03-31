@@ -1,0 +1,43 @@
+{
+  "name": "caustic-lsp",
+  "displayName": "Caustic Language",
+  "description": "Language support for Caustic (.cst) — diagnostics, hover, go-to-definition, completion, references, rename",
+  "version": "0.1.0",
+  "publisher": "caua",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Caua726/caustic-lsp"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": ["Programming Languages"],
+  "activationEvents": [
+    "onLanguage:caustic"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "caustic",
+        "aliases": ["Caustic", "cst"],
+        "extensions": [".cst"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Caustic",
+      "properties": {
+        "caustic.serverPath": {
+          "type": "string",
+          "default": "",
+          "description": "Path to caustic-lsp binary. If empty, searches in workspace root then PATH."
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "vscode-languageclient": "^9.0.1"
+  }
+}
