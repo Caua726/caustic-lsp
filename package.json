@@ -25,6 +25,13 @@
         "configuration": "./language-configuration.json"
       }
     ],
+    "grammars": [
+      {
+        "language": "caustic",
+        "scopeName": "source.caustic",
+        "path": "./syntaxes/caustic.tmLanguage.json"
+      }
+    ],
     "configuration": {
       "type": "object",
       "title": "Caustic",
