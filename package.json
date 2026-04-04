@@ -1,7 +1,7 @@
 {
   "name": "caustic-lsp",
   "displayName": "Caustic Language",
-  "description": "Language support for Caustic (.cst) — diagnostics, hover, go-to-definition, completion, references, rename",
+  "description": "Language support for Caustic (.cst) — diagnostics, hover, go-to-definition, completion, references, rename, documentation viewer",
   "version": "0.1.0",
   "publisher": "caua",
   "repository": {
@@ -17,6 +17,12 @@
   ],
   "main": "./extension.js",
   "contributes": {
+    "commands": [
+      {
+        "command": "caustic.openDocs",
+        "title": "Caustic: Open Documentation"
+      }
+    ],
     "languages": [
       {
         "id": "caustic",
