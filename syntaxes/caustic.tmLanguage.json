@@ -80,11 +80,19 @@
         },
         {
           "name": "keyword.other.caustic",
-          "match": "\\b(is|as|with|only|gen|defer)\\b"
+          "match": "\\b(is|as|with|only|gen|defer|section)\\b"
         },
         {
           "name": "keyword.operator.caustic",
           "match": "\\b(cast|sizeof|syscall|asm|fn_ptr|call)\\b"
+        },
+        {
+          "name": "support.function.builtin.caustic",
+          "match": "\\b(atomic_load|atomic_store|atomic_add|atomic_xchg|atomic_cas|__builtin_sqrt|__builtin_va_start)\\b"
+        },
+        {
+          "name": "constant.language.builtin.caustic",
+          "match": "\\b(__target_is_linux|__target_is_windows|__target_is_caustic|__compat_mode|__compile_error|__allow_unsupported)\\b"
         },
         {
           "name": "storage.modifier.caustic",

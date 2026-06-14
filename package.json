@@ -2,7 +2,7 @@
   "name": "caustic-lsp",
   "displayName": "Caustic Language",
   "description": "Language support for Caustic (.cst) — diagnostics, hover, go-to-definition, completion, references, rename, documentation viewer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "caua",
   "repository": {
     "type": "git",
